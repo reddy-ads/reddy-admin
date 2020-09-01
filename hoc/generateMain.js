@@ -16,7 +16,7 @@ const generateMain = (Component) => {
           <div id="content-wrapper" className="d-flex flex-column">
             <div id="content">
               <Navbar />
-             <Component {...props}/>
+              <Component {...props} />
             </div>
             <Footer />
           </div>
@@ -29,7 +29,7 @@ const generateMain = (Component) => {
       </React.Fragment>
     );
   };
-  return WrappenMain
+  return WrappenMain;
 };
 
 export default generateMain;
