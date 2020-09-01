@@ -33,9 +33,9 @@ const SideBar = () => {
 
       <div className="sidebar-heading">Menu</div>
       <li className="nav-item">
-        <a className="nav-link" href="charts.html">
-          <i className="fas fa-upload" />
-          <span>Upload</span>
+        <a className="nav-link" href="/form">
+          <i className="fab fa-wpforms" />
+          <span>Form</span>
         </a>
       </li>
 

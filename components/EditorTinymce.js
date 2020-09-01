@@ -8,10 +8,10 @@ const EditorTinymce = () => {
 
   return (
     <Editor
-      initialValue="<p>This is the initial content of the editor</p>"
       init={{
         height: 500,
         menubar: `insert`,
+        paste_data_images: true,
         plugins: [
           "advlist autolink lists link image charmap print preview anchor",
           "searchreplace visualblocks code fullscreen",
