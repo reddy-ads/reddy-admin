@@ -9,28 +9,30 @@ const EditorTinymce = () => {
     <React.Fragment>
       <form className="user">
         <div className="form-group">
-          <input
-            type="text"
-            className="form-control form-control-user"
-            placeholder="Topic"
-          />
+          <input type="text" className="form-control" placeholder="Topic" />
         </div>
         <div className="form-group">
-          <input
+          {/* <input
             type="text"
             className="form-control form-control-user"
             placeholder="Category"
-          />
+          /> */}
+          <select name="cars" className="form-control">
+            <option value="volvo">News</option>
+            <option value="saab">Reviws</option>
+            <option value="mercedes">Hot News</option>
+            <option value="audi">Esport</option>
+          </select>
         </div>
         <div className="form-group">
           <input
             type="text"
-            className="form-control form-control-user"
-            placeholder="Email Address"
+            className="form-control"
+            placeholder="Tags"
           />
         </div>
         <Editor
-        apiKey='tgganvajpetwndk4a5rpicxpvluw20lx9tqik5i4nuaetmh7'
+          apiKey="tgganvajpetwndk4a5rpicxpvluw20lx9tqik5i4nuaetmh7"
           init={{
             height: 500,
             menubar: `insert`,
