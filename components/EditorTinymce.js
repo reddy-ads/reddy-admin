@@ -27,7 +27,7 @@ const EditorTinymce = () => {
         </div>
 
         <div className="form-group">
-          <FormTags />
+          <FormTags />  
         </div>
 
         <Editor

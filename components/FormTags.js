@@ -8,19 +8,19 @@ const FormTags = () => {
     // />
     <React.Fragment>
       <input type="checkbox" name="vehicle1" value="เกมมาใหม่" />
-      <label for=""> เกมมาใหม่</label>
+      <label> เกมมาใหม่</label>
       <input type="checkbox" name="vehicle2" value="เกมเก่า" />
-      <label for=""> เกมเก่า</label>
+      <label> เกมเก่า</label>
       <input type="checkbox" name="vehicle3" value="hot" />
-      <label for=""> hot</label>
+      <label> hot</label>
       <input type="checkbox" name="vehicle3" value="console" />
-      <label for=""> console</label>
+      <label> console</label>
       <input type="checkbox" name="vehicle3" value="pc" />
-      <label for=""> pc</label>
+      <label> pc</label>
       <input type="checkbox" name="vehicle3" value="mobile" />
-      <label for=""> mobile</label>
+      <label> mobile</label>
       <input type="checkbox" name="vehicle3" value="เกมมาแรง" />
-      <label for=""> เกมมาแรง</label>
+      <label> เกมมาแรง</label>
     </React.Fragment>
   );
 };
