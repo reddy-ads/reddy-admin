@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 const SideBar = () => {
   return (
     <ul
@@ -6,32 +7,39 @@ const SideBar = () => {
       id="accordionSidebar"
     >
       {/* Sidebar - Brand */}
-      <a
-        className="sidebar-brand d-flex align-items-center justify-content-center"
-        href="index.html"
-      >
-        <div className="sidebar-brand-icon rotate-n-15">
-          <i className="fas fa-laugh-wink" />
-        </div>
-        <div className="sidebar-brand-text mx-3">
-          SB Admin <sup>2</sup>
-        </div>
-      </a>
+      <Link href="/">
+        <a className="sidebar-brand d-flex align-items-center justify-content-center">
+          <div className="sidebar-brand-icon rotate-n-15">
+            <i className="fas fa-laugh-wink" />
+          </div>
+          <div className="sidebar-brand-text mx-3">
+            SB Admin <sup>2</sup>
+          </div>
+        </a>
+      </Link>
       {/* Divider */}
       <hr className="sidebar-divider my-0" />
       {/* Nav Item - Dashboard */}
       <li className="nav-item active">
-        <a className="nav-link" href="index.html">
-          <i className="fas fa-fw fa-tachometer-alt" />
-          <span>Dashboard</span>
+        <Link href="/">
+          <a className="nav-link">
+            <i className="fas fa-fw fa-tachometer-alt" />
+            <span>Dashboard</span>
+          </a>
+        </Link>
+      </li>
+
+      <hr className="sidebar-divider" />
+
+      <div className="sidebar-heading">Menu</div>
+      <li className="nav-item">
+        <a className="nav-link" href="charts.html">
+          <i className="fas fa-upload" />
+          <span>Upload</span>
         </a>
       </li>
-      {/* Divider */}
-      <hr className="sidebar-divider" />
-      {/* Heading */}
-      <div className="sidebar-heading">Interface</div>
-      {/* Nav Item - Pages Collapse Menu */}
-      <li className="nav-item">
+
+      {/* <li className="nav-item">
         <a
           className="nav-link collapsed"
           href="#"
@@ -60,7 +68,7 @@ const SideBar = () => {
           </div>
         </div>
       </li>
-      {/* Nav Item - Utilities Collapse Menu */}
+
       <li className="nav-item">
         <a
           className="nav-link collapsed"
@@ -96,11 +104,11 @@ const SideBar = () => {
           </div>
         </div>
       </li>
-      {/* Divider */}
+
       <hr className="sidebar-divider" />
-      {/* Heading */}
+
       <div className="sidebar-heading">Addons</div>
-      {/* Nav Item - Pages Collapse Menu */}
+
       <li className="nav-item">
         <a
           className="nav-link collapsed"
@@ -141,26 +149,26 @@ const SideBar = () => {
           </div>
         </div>
       </li>
-      {/* Nav Item - Charts */}
+ 
       <li className="nav-item">
         <a className="nav-link" href="charts.html">
           <i className="fas fa-fw fa-chart-area" />
           <span>Charts</span>
         </a>
       </li>
-      {/* Nav Item - Tables */}
+
       <li className="nav-item">
         <a className="nav-link" href="tables.html">
           <i className="fas fa-fw fa-table" />
           <span>Tables</span>
         </a>
       </li>
-      {/* Divider */}
+
       <hr className="sidebar-divider d-none d-md-block" />
-      {/* Sidebar Toggler (Sidebar) */}
+
       <div className="text-center d-none d-md-inline">
         <button className="rounded-circle border-0" id="sidebarToggle" />
-      </div>
+      </div> */}
     </ul>
   );
 };
