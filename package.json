@@ -8,9 +8,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "@editorjs/editorjs": "^2.18.0",
+    "@tinymce/tinymce-react": "^3.6.0",
     "next": "9.5.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"
-  }
+  },
+  "devDependencies": {}
 }
